@@ -1,32 +1,32 @@
 package calc;
 
-public class CalculadoraCientifica extends Calculadora{
-	
-	public Double calcularExpoente(double num, double expoente) {
-		return Math.pow(num, expoente);
+public class CalculadoraCientifica extends Calculadora {
+
+	public Double calcularExpoente() {
+		return Math.pow(valor1, valor2);
 	}
-	
-	public Double log(Double base, Double valor) {
-		return Math.log(valor)/Math.log(base);
+
+	public Double log() {
+		return Math.log(valor1) / Math.log(valor2);
 	}
-	
+
 	public Double raizQuadrada(int numR) {
 		return Math.sqrt(numR);
 	}
-	
+
 	public Double seno(int numAng) {
-		Double radiandos = Math.toRadians(numAng);
-		return Math.sin(radiandos);		
+		valor1 = Math.toRadians(numAng);
+		return Math.sin(valor1);
 	}
-	
+
 	public Double cosseno(int numAng) {
-		Double radiandos = Math.toRadians(numAng);
-		return Math.cos(radiandos);		
+		valor1 = Math.toRadians(numAng);
+		return Math.cos(valor1);
 	}
-	
+
 	public Double tangente(int numAng) {
-		Double radiandos = Math.toRadians(numAng);
-		return Math.tan(radiandos);		
+		valor1 = Math.toRadians(numAng);
+		return Math.tan(valor1);
 	}
-	
+
 }
